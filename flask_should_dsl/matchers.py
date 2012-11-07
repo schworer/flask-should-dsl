@@ -54,7 +54,7 @@ def make_status_checker(nameprefix, status):
 
 
 # Make be_xxx matchers for all the status codes
-_status_codes = [200, 400, 401, 403, 404, 405, 500]
+_status_codes = [200, 201, 400, 401, 403, 404, 405, 500]
 for code in _status_codes:
     matcher(make_status_checker('be', code))
     matcher(make_status_checker('abort', code))
